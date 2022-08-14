@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --fontHeading: "Poppins", sans-serif;
+  --fontPara: "Open Sans", sans-serif;
+  --violetColor: hsl(257, 40%, 49%);
+  --RoseColor: hsl(300, 69%, 71%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  background-image: url(./images/bg-desktop.svg);
+  background-color: var(--violetColor);
+
+  padding: 40px;
+}
+.content img {
+  margin-bottom: 40px;
+}
+
+
+.withoutLogo {
+  display: flex;
+}
+.withoutLogo img{
+    width: 40%;
+}
+.withoutLogo h1 {
+  color: #ffffff;
+  font-family: var(--fontHeading);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.withoutLogo p {
+  color: #ffffff;
+  font-family: var(--fontPara);
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+.contentParaButton {
+  margin: 5% 5%;
+}
+.icon {
+    display: flex;
+    float: right;
+  }
+  .raduis {
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin: 10px;
+  }
+  .raduis:hover{
+      cursor: pointer;
+      border-color: var(--RoseColor);
+  }
+  .icon img {
+    width: 25px;
+    filter: brightness(0) invert(1);
+    padding: 7.5px;
+  }
+  .icon img:hover{
+      cursor: pointer;
+      filter: invert(81%) sepia(36%) saturate(4961%) hue-rotate(242deg) brightness(100%) contrast(84%);
+  }
+.attribution {
+  margin-top: 27px;
+}
+/* Button */
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 1px 0px 10px #000000;
+  -moz-box-shadow: 1px 0px 10px #000000;
+  box-shadow: 1px 0px 10px #000000;
+  font-family: Arial;
+  color: hsl(257, 40%, 49%);
+  font-size: 20px;
+  background: #ffffff;
+  padding: 15px 40px 15px 40px;
+  border: solid hsl(257, 40%, 49%) 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: hsl(300, 69%, 71%);
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media screen  and (max-width : 376px) {
+    .content img{
+        width: 110px;
+    }
+    .withoutLogo{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .withoutLogo img{
+        width: 100% ;
+    }
+    .withoutLogo h1{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .withoutLogo p{
+        text-align: center;
+        line-height: normal;
+    }
+    .btn{
+        width: 90%;
+        text-align: center;
+    }
+    .icon{
+        float: none;
+        margin: 50px 10%;
+       
+    }
+    .icon img{
+        width: 25px;
+    }
+}
